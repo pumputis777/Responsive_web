@@ -175,8 +175,8 @@ h1{
     font-size: 14px;
     }
     .navbar img{
-        width: 20px;
-        heigt: 20px;
+        width: 2rem;
+        heigt: 2rem;
     }
     .card {
     flex-direction: column;
@@ -196,8 +196,8 @@ h1{
     }
     
     .navbar img{
-        width: 60px;
-        heigt: 60px;
+        width: 6rem;
+        heigt: 6rem;
     }
     
     .card {

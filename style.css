@@ -236,6 +236,11 @@ h1{
     font-size: 18px;
     }
 
+    .navbar{
+        width: fit-content;
+        gap: 10px
+    }
+    
     .card {
     max-width: 900px;
     }

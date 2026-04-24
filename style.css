@@ -31,8 +31,8 @@ color:var(--text);
     width: fit-content;
     max-width: 90%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     background-color: var(--card);
     padding: 10px 15px;
@@ -59,10 +59,8 @@ color:var(--text);
 .menu{
     list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
-    width: 100%;
+    gap: 10px;
     margin: 0;
     padding: 0;
 }
@@ -79,11 +77,12 @@ color:var(--text);
 }
 
 .menu img{
-    flex-direction: column;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     display: block;
-    border-radius: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .imga{

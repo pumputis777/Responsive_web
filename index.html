@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Nuestro Equipo</title>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">
+<a href="index.html"><img src="imagenes/ultra png.png"></a>
+</div>
+
+<ul class="menu">
+<li><a href="#mia"><img src="imagenes/mia.jpeg"></a></li>
+<li><a href="#maxi"><img src="imagenes/maxi.jpeg"></a></li>
+<li><a href="#agostina"><img src="imagenes/agostina.jpeg"></a></li>
+<li><a href="#facundo"><img src="imagenes/facundo.jpeg"></a></li>
+<li><a href="#pascual"><img src="imagenes/pascual.jpeg"></a></li>
+</ul>
+</nav>
+
+<header class="hero">
+<h1>Cinco personas, un proyecto</h1>
+<p>Diseño moderno con animaciones</p>
+</header>
+
+<section class="grid">
+<div class="card"><img id="mia" src="imagenes/mia.jpeg"><div><h2>Mía</h2><p>Bio</p></div></div>
+<div class="card"><img id="maxi" src="imagenes/maxi.jpeg"><div><h2>Maxi</h2><p>Bio</p></div></div>
+<div class="card"><img id="agostina" src="imagenes/agostina.jpeg"><div><h2>Agostina</h2><p>Bio</p></div></div>
+<div class="card"><img id="facundo" src="imagenes/facundo.jpeg"><div><h2>Facundo</h2><p>Bio</p></div></div>
+<div class="card"><img id="pascual" src="imagenes/pascual.jpeg"><div><h2>Pascual</h2><p>Bio</p></div></div>
+</section>
+
+<footer class="footer">
+<p>© 2026 Nuestro Equipo</p>
+</footer>
+
+<script>
+const cards=document.querySelectorAll('.card');
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('show');}
+});
+});
+cards.forEach(card=>observer.observe(card));
+</script>
+
+</body>
+</html>

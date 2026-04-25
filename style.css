@@ -6,6 +6,10 @@
 --hover:#6366f1;
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 body{
 margin:0;
 font-family:"Jersey 25",sans-serif;
@@ -65,7 +69,6 @@ padding:20px;
 }
 
 .card{
-scroll-margin-top: 200px;
 display:flex;
 gap:20px;
 align-items:center;
